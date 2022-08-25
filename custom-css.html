@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom CSS Property</title>
+    <style>
+        :root{
+            --main-color: orange;
+            --side-width: 200px;
+            --dark-border: 2px solid black;
+            --border-color: darkblue;
+        }
+        h1{
+            color: var(--main-color);
+        }
+        p{
+            color: magenta;
+        }
+        h2{
+            border: 1px solid magenta;
+            color: var(--main-color);
+        }
+        footer{
+            color: magenta;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>I am exploring custom css properties</h1>
+        <p>Welcome to my website</p>
+    </header>
+    <main>
+        <h2>My awesome content</h2>
+    </main>
+    <footer>
+        <p>Copyrite</p>
+    </footer>
+</body>
+</html>
